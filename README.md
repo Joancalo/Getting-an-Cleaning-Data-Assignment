@@ -1,21 +1,21 @@
 # Getting-an-Cleaning-Data-Assignment
 # Assignment for the Getting and Cleaning Data Course.
-==================================================================
+========================================================================================================================================
 Assignment for the Getting and Cleaning Data Course.
 Version 1.0
-==================================================================
-The assignment have been carried out with two data sets provided by the course. Followign the instructions, the data for the project was
+========================================================================================================================================
+The assignment have been carried out with two data sets provided by the course. Following the instructions, the data for the project was
 downloaded from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 One R script called run_analysis.R was created to do the following.
 
 1- To Merge the training and the test sets to create one data set.
-2- . To extracts only the measurements on the mean and standard deviation for each measurement.
+2- To extracts only the measurements on the mean and standard deviation for each measurement.
 3- To use descriptive activity names to name the activities in the data set.
 4- To Appropriately label the data set with descriptive variable names.
-5- From the data set in step 4, to create a second, independent tidy data set with the average of each variable for each activity and each subject.
-======================================
+5- To create an tidy data set from the data set in step 4, with the average of each variable for each activity and each subject.
+========================================================================================================================================
 
 The submitted Assignment includes:
 
@@ -24,7 +24,7 @@ The submitted Assignment includes:
 3- A code book describing the variables.
 4- This README.md file describing the assignment and how the scripts work 
 
-=======================================
+========================================================================================================================================
 
 The text below explains how the script was done and how it works.
 
