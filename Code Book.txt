@@ -1,7 +1,8 @@
 Feature Selection 
 =================
 
-The features selected for this database come from the original data set for the Assignment. The description for each feature is in the original features_info file. These features are:
+The features selected for this database come from the original data set for the Assignment. The description for each feature is in 
+the original features_info file. These features are:
 
 
 tBodyAcc-XYZ
