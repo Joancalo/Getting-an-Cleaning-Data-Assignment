@@ -4,6 +4,7 @@
 Assignment for the Getting and Cleaning Data Course.
 Version 1.0
 ========================================================================================================================================
+
 The assignment have been carried out with two data sets provided by the course. Following the instructions, the data for the project was
 downloaded from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -15,6 +16,7 @@ One R script called run_analysis.R was created to do the following.
 3- To use descriptive activity names to name the activities in the data set.
 4- To Appropriately label the data set with descriptive variable names.
 5- To create an tidy data set from the data set in step 4, with the average of each variable for each activity and each subject.
+
 ========================================================================================================================================
 
 The submitted Assignment includes:
