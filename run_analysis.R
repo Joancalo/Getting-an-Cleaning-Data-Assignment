@@ -1,6 +1,6 @@
 # Getting-an-Cleaning-Data-Assignment
 # Assignment for the Getting and Cleaning Data Course.
-# This file explain how the Assignment was done and how the script works.
+# This file is the script for the Assignment and explains how it was done and how it works.
 
 # To download the data set I used these commands 
 if(!file.exists("./data")){dir.create("./data")}
