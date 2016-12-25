@@ -29,12 +29,13 @@ subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 activity_test <- read.table("./UCI HAR Dataset/test/y_test.txt")
 activity_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 
-I cre
+I created a vector of the features names and changed the names of the variables in the tables subject_test, subject_train, activity_test y activity_train to subject and activity respectively.     
 nms <- as.vector(features$V2)
 colnames(subject_test) <- c("subject")
 colnames(subject_train) <- c("subject")
 colnames(activity_test) <- c("activity")
 colnames(activity_train) <- c("activity")
+
 colnames(test) <- nms
 df_test <- cbind(subject_test, activity_test, test)
 colnames(train) <- nms
