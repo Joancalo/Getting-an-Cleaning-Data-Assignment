@@ -1,6 +1,32 @@
 # Getting-an-Cleaning-Data-Assignment
 # Assignment for the Getting and Cleaning Data Course.
-# This file explain how the Assignment was done and how the script works.
+==================================================================
+Assignment for the Getting and Cleaning Data Course.
+Version 1.0
+==================================================================
+The assignment have been carried out with two data sets provided by the course. Followign the instructions, the data for the project was
+downloaded from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+One R script called run_analysis.R was created to do the following.
+
+1- To Merge the training and the test sets to create one data set.
+2- . To extracts only the measurements on the mean and standard deviation for each measurement.
+3- To use descriptive activity names to name the activities in the data set.
+4- To Appropriately label the data set with descriptive variable names.
+5- From the data set in step 4, to create a second, independent tidy data set with the average of each variable for each activity and each subject.
+======================================
+
+The submitted Assignment includes:
+
+1- A tidy data set created in step 5 of the instructions called "mean_std_dfCast.txt"
+2- A link to the Github repo with the code for performing the analysis (a script called "run_analysis.R"). The script explains how it works 
+3- A code book describing the variables.
+4- This README.md file describing the assignment and how the scripts work 
+
+=======================================
+
+The text below explains how the script was done and how it works.
 
 # To download the data set I used these commands 
 if(!file.exists("./data")){dir.create("./data")}
@@ -74,7 +100,5 @@ library(reshape2)
 mean_std_dfMelt<- melt(mean_std_df, id=c("subject","activity"), measure.vars = mean_std_nms[3:81])
 mean_std_dfCast <- dcast(mean_std_dfMelt, subject + activity~variable, mean)
 
-# I wrote the final average's df into a file with write.table()
+# I wrote the final average's df into a file with write.table(). This should be the final output. 
 write.table(mean_std_dfCast, file = "./mean_std_dfCast.txt", row.name=FALSE)
-
-
